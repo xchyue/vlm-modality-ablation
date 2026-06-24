@@ -1,0 +1,16 @@
+{
+  "task": "hopper",
+  "variant": "v1_ground_truth",
+  "episode": 2,
+  "video": "data/reweight_rollouts/hopper_v1_ground_truth_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent starts in an upright posture, then begins to tilt its entire body to the right, bending slightly at the lower joint.",
+    "The agent continues to lean further to the right, with the lower segment bending more acutely and moving closer to the ground.",
+    "The upper body is now significantly angled, and the lower segment is nearly horizontal, almost touching the ground.",
+    "The agent's lowest segment makes contact with the ground, while the upper body continues its downward arc, maintaining a smooth motion.",
+    "The agent's body is now very low, with the middle segment almost parallel to the ground, forming a wide V-shape.",
+    "The agent begins to push off the ground, with the lowest segment lifting and the upper body starting to rise.",
+    "The agent continues to straighten its posture, with the lower segment angled upwards and the body moving towards vertical.",
+    "The agent is nearly upright again, maintaining a slight lean to the right, appearing to reset for the next action."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task": "humanoid",
+  "variant": "v4_blatant",
+  "episode": 0,
+  "video": "data/reweight_rollouts/humanoid_v4_blatant_seed0/iter_0/episode_0/video.mp4",
+  "frames": [
+    "The agent stands upright, then begins to bend its right knee and lift its left foot slightly, while its left arm moves forward.",
+    "The agent continues to bend its right knee, shifting its weight, with its left leg extending backward and left arm forward.",
+    "The agent's right leg is deeply bent, supporting its weight, as the left leg lifts off the ground and swings back.",
+    "The agent is in a deep lunge on its right leg, with the left leg bent high behind it and arms in a running posture.",
+    "The agent straightens its right leg, bringing the left leg down to the ground, returning to an upright stance.",
+    "The agent stands momentarily with both feet on the ground, appearing stable and upright.",
+    "The agent then bends its left knee, lifting its right foot, and leans forward, initiating another step.",
+    "The agent's left leg buckles, and it falls forward onto its hands and knees, failing to maintain balance."
+  ]
+}

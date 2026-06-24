@@ -1,0 +1,16 @@
+{
+  "task": "humanoid",
+  "variant": "v5_sim_bug",
+  "episode": 1,
+  "video": "data/reweight_rollouts/humanoid_v5_sim_bug_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent stands upright, slightly leaning forward with arms bent at the elbows and held near its chest.",
+    "It begins to lose balance, leaning further forward and to its right, with its left leg lifting slightly.",
+    "The agent continues to fall forward and to its right, with its body significantly angled and left leg extended backward.",
+    "Its upper body is almost parallel to the ground, falling rapidly with arms bent and legs splayed.",
+    "The agent makes contact with the ground, landing on its chest and arms, with legs still somewhat extended.",
+    "It is now lying prone on the ground, with its upper body supported by its forearms and legs bent at the knees.",
+    "The agent's legs begin to curl up towards its body, while its upper body remains in a prone position.",
+    "The agent is fully collapsed on the ground, lying on its side with limbs curled, appearing motionless."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task": "halfcheetah",
+  "variant": "v4_blatant",
+  "episode": 0,
+  "video": "data/reweight_rollouts/halfcheetah_v4_blatant_seed0/iter_0/episode_0/video.mp4",
+  "frames": [
+    "The agent begins to lift its body from a low, horizontal position, extending its rear limbs.",
+    "It continues to rise, shifting its weight onto its rear limbs while its front limbs bend upwards.",
+    "The agent achieves an upright, almost standing posture, then rapidly loses balance and begins to fall forward.",
+    "It collapses completely, landing flat on its stomach with all limbs making contact with the ground.",
+    "The agent lies prone, with its body horizontal and its limbs slightly bent and splayed.",
+    "It attempts a slight push-up motion, causing its body to rock gently up and down.",
+    "The rocking motion persists, with the agent's torso lifting slightly off the ground.",
+    "The agent settles back into a stable, prone position, exhibiting no further significant movement."
+  ]
+}

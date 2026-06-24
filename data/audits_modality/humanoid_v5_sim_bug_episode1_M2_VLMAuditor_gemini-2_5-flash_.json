@@ -1,0 +1,41 @@
+{
+  "audit_input": {
+    "video_path": "",
+    "task_goal": "make the humanoid run forward while remaining upright and balanced",
+    "available_components": [
+      "forward_velocity",
+      "energy_cost",
+      "alive_bonus",
+      "healthy_pose",
+      "contact_force_penalty",
+      "forward_displacement"
+    ],
+    "current_weights": {
+      "forward_velocity": 1.0,
+      "energy_cost": 0.0,
+      "alive_bonus": 5.0,
+      "healthy_pose": 0.0,
+      "contact_force_penalty": 1.0,
+      "forward_displacement": 0.0
+    },
+    "frame_descriptions": null,
+    "reward_log": null,
+    "component_log": null
+  },
+  "audit_output": {
+    "task_success": false,
+    "reward_hacking_detected": false,
+    "reason": "Without a rollout video, task success cannot be confirmed, and reward hacking cannot be visually detected. However, the current reward weights are imbalanced for the stated task goal. The high 'alive_bonus' (5.0) combined with zero 'healthy_pose' and 'energy_cost' creates a strong incentive for the agent to simply survive without necessarily maintaining an upright, balanced, or energy-efficient running posture. This reward structure is highly susceptible to hacking.",
+    "next_reward_weights": {
+      "alive_bonus": 1.0,
+      "contact_force_penalty": 1.0,
+      "energy_cost": 0.1,
+      "forward_displacement": 0.0,
+      "forward_velocity": 1.0,
+      "healthy_pose": 1.0
+    },
+    "severity": 3
+  },
+  "auditor_name": "VLMAuditor[gemini-2.5-flash][M2]",
+  "timestamp": "2026-06-02T01:44:19+00:00"
+}

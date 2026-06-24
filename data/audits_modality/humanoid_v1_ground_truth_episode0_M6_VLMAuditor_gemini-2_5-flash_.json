@@ -1,0 +1,20 @@
+{
+  "audit_input": {
+    "video_path": "data/reweight_rollouts/humanoid_v1_ground_truth_seed0/iter_0/episode_0/video.mp4",
+    "task_goal": "make the humanoid run forward while remaining upright and balanced",
+    "available_components": [],
+    "current_weights": {},
+    "frame_descriptions": null,
+    "reward_log": null,
+    "component_log": null
+  },
+  "audit_output": {
+    "task_success": false,
+    "reward_hacking_detected": false,
+    "reason": "The humanoid moves forward and remains upright, but its locomotion is very jerky, unstable, and unnatural. It does not achieve a stable, balanced run as required by the task goal. There is no clear evidence of reward hacking, but rather a failure to learn the desired natural gait.",
+    "next_reward_weights": {},
+    "severity": 3
+  },
+  "auditor_name": "VLMAuditor[gemini-2.5-flash][M6]",
+  "timestamp": "2026-06-02T04:20:58+00:00"
+}

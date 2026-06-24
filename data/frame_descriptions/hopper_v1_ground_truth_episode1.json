@@ -1,0 +1,16 @@
+{
+  "task": "hopper",
+  "variant": "v1_ground_truth",
+  "episode": 1,
+  "video": "data/reweight_rollouts/hopper_v1_ground_truth_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent begins in an upright posture, with its bottom segment starting to tilt slightly to the right.",
+    "The bottom segment continues to tilt further right, and the upper segment leans in the same direction.",
+    "The bottom segment is significantly angled to the right, with the upper segment following its lean.",
+    "The bottom segment is nearly horizontal, and the upper segment bends at the joint, leaning further right.",
+    "The bottom segment remains horizontal, while the upper segment swings left, forming a V-shape.",
+    "The upper segment continues its leftward swing, becoming almost parallel to the horizontal bottom segment.",
+    "The right end of the bottom segment begins to lift from the ground as the upper segment swings further left.",
+    "The bottom segment is now angled upwards on the right, and the upper segment has swung significantly left, appearing to attempt a recovery."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task": "halfcheetah",
+  "variant": "v5_sim_bug",
+  "episode": 2,
+  "video": "data/reweight_rollouts/halfcheetah_v5_sim_bug_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent lies on its side, with its main body and one leg touching the checkered ground. The other leg is bent and raised.",
+    "It remains on its side, with the main body and one leg still grounded, while the other leg is slightly extended upwards.",
+    "The agent rolls further, with its entire body and both legs now making contact with the ground in a sprawled position.",
+    "It begins to lift its main body segment slightly, with one leg still grounded and the other starting to bend.",
+    "The agent is in a low crouch, with its main body elevated and both legs bent, appearing to prepare for movement.",
+    "It lowers its body back to the ground, with the main segment and one leg making contact, while the other leg extends upwards.",
+    "The agent is again mostly on its side, with its main body and one leg grounded, and the other leg bent and slightly lifted.",
+    "It continues to shift its weight on its side, with the main body and one leg grounded, showing no clear forward locomotion."
+  ]
+}

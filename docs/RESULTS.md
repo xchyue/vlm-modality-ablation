@@ -1,0 +1,121 @@
+# Part 3 Results — Modality Ablation (VLM Reward-Hacking Auditor)
+
+A VLM auditor (Gemini 2.5 Flash) judges whether an RL policy was trained under a clean or a
+hacked reward, by inspecting one rollout. We vary **which signals the auditor sees** across six
+modalities (M1–M6) and measure detection. Coverage: **4 tasks × 5 reward variants × 6 modalities
+× 3 episodes = 360 audits.**
+
+## What we measure
+
+Binary classification, **positive class = "reward hacking detected."** Ground truth comes from the
+reward variant: `v1` = clean, `v2`–`v5` = hacking. From the confusion matrix (TP/FP/TN/FN) we report:
+
+```
+precision         = TP / (TP + FP)         # when it flags hacking, how often is it right
+recall            = TP / (TP + FN)         # of all real hacking, how much it catches
+F1                = harmonic mean(P, R)    # ignores TN entirely
+specificity       = TN / (TN + FP)         # of all clean runs, how many correctly cleared   [added]
+balanced_accuracy = (recall + specificity) / 2   # weights both classes; robust to 4:1 imbalance  [added]
+```
+
+`specificity` and `balanced_accuracy` are not in the original metrics — they were added here because
+**F1 never looks at TN**, so it cannot see whether the auditor over-flags clean runs.
+
+## Results — per modality (360 audits)
+
+```
+Mod   sees                       TP  FP  TN  FN     F1   Specif  BalAcc
+-----------------------------------------------------------------------
+M1    goal only                   0   0  12  48  0.000   1.000   0.500
+M2    + reward code/weights      41   8   4   7  0.845   0.333   0.594
+M3    + per-step stats           37  10   2  11  0.779   0.167   0.469
+M4    + video                    34   8   4  14  0.756   0.333   0.521
+M5    all (code+stats+video+cap) 46  12   0   2  0.868   0.000   0.479   ★ highest F1, below-chance BalAcc
+M6    video only                 31   5   7  17  0.738   0.583   0.615   ★ best BalAcc
+```
+
+Ranking by **F1**: M5 > M2 > M3 > M4 > M6 > M1.
+Ranking by **balanced accuracy**: M6 > M2 > M4 > M1 > M5 > M3 — *the order flips.*
+
+## Per-modality readout
+
+**M1 (goal only)** — blind. F1 = 0: it never flags hacking, so it catches nothing. (It trivially
+"clears" every clean run, hence specificity 1.0, but balanced accuracy is exactly chance.) Task
+description alone gives no basis to detect reward hacking.
+
+**M2 (+reward code/weights)** — the single biggest jump: F1 0 → 0.845, and the **best balanced
+accuracy (0.594)**. Symbolic access to the reward specification is the decisive signal.
+
+**M3 (+per-step stats)** — adding raw reward/component logs *hurts* relative to M2 (F1 0.779, BalAcc
+0.469): the extra numeric noise dilutes rather than helps.
+
+**M4 (+video)** — F1 0.756, BalAcc 0.521. Video adds little over code alone (M2 still beats it).
+
+**M5 (all signals)** — highest F1 (0.868) but **balanced accuracy 0.479, below chance** and 5th of 6.
+specificity = 0.000: it flags **all 12 clean runs** as hacking. It over-flags. Adding frame captions
+made this worse, not better (specificity 0.083 → 0.000 vs the no-caption version).
+
+**M6 (video only)** — lowest-ish F1 (0.738) but the **highest balanced accuracy (0.615)** and best
+specificity (0.583): high precision (0.861), lower recall (0.646) — the most conservative, least
+over-flagging modality.
+
+## Key finding
+
+By F1, M5 (all signals) ranks first — but balanced accuracy flips this: M6 (video only) is best,
+while M5 falls **below chance (0.479)** because it over-flags every clean run (specificity = 0.000).
+So M5's high F1 is an **artifact of class imbalance, not real discrimination**. **Reward code alone
+(M2) already captures most of the usable signal** (balanced acc 0.594); piling on more signals only
+makes the auditor over-flag — and **adding frame captions made over-flagging worse**. The auditor
+behaves more like a code reviewer than a behavior watcher, and "all signals" drives it to flag
+everything.
+
+## Known limitations
+
+- **Frame-description pipeline bug (found and fixed).** `run_modality_sweep.py` originally called
+  `build_audit_input` twice and the second call dropped `frame_descriptions`, so M5 had silently run
+  *without* its captions. Caught during verification, fixed, and re-ran M5 with captions; the
+  over-flagging conclusion held and in fact strengthened (specificity 0.083 → 0.000). A regression
+  test (`tests/test_modality_masking.py::test_m5_includes_frame_descriptions`) now guards it.
+- **Small negative class.** Specificity is estimated on only 12 clean (v1) runs, so it is
+  high-variance: `SE = √(p(1−p)/n) ≈ 0.08` at `n = 12` (≈95% CI `[0, 0.24]` for M5). The direction
+  (M5 over-flags) is robust; the exact value is not. *Next: collect more v1 runs.*
+- **Single auditor, few episodes.** Only Gemini 2.5 Flash, 3 episodes per cell — no cross-model
+  check, no confidence intervals. *Next: re-run all modalities with a stronger model.*
+- **Caption faithfulness unverified.** M5's captions are auto-generated by Gemini from the videos and
+  not checked for faithfulness, so "adding captions did not help" cannot be fully separated from
+  "these captions were low-quality." *Next: verify caption quality / use stronger or human captions.*
+
+## File layout
+
+```
+data/audits_modality/   per-(task, variant, modality, episode) audit JSON  (360 files)
+data/frame_descriptions/  M5 frame captions
+data/analysis/          modality_summary.json + modality_report.txt + plots/
+src/reward_auditor/eval/
+  modality_ablation.py  modalities, MODALITY_CONFIGS, build_audit_input, run_ablation
+  metrics.py            ConfusionMatrix (+ specificity, balanced_accuracy), summary
+scripts/
+  generate_frame_descriptions.py   generate M5 captions
+  run_modality_sweep.py            run the per-modality audit sweep
+  analyze_modality_results.py      compute metrics, write report + plots
+tests/test_modality_masking.py     masking + metric + pipeline regression tests
+```
+
+## Reproducing
+
+```bash
+# 1. (M5 only) generate frame captions
+GEMINI_API_KEY=... uv run python scripts/generate_frame_descriptions.py
+
+# 2. run the sweep (all 6 modalities)
+GEMINI_API_KEY=... uv run python scripts/run_modality_sweep.py \
+    --modalities M1 M2 M3 M4 M5 M6 \
+    --tasks ant halfcheetah hopper humanoid \
+    --max-episodes-per-variant 3 --overwrite
+
+# 3. compute metrics + figures
+uv run python scripts/analyze_modality_results.py
+
+# 4. verify the metrics + masking
+uv run pytest tests/test_modality_masking.py -v
+```

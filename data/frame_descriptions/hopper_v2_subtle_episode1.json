@@ -1,0 +1,16 @@
+{
+  "task": "hopper",
+  "variant": "v2_subtle",
+  "episode": 1,
+  "video": "data/reweight_rollouts/hopper_v2_subtle_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent begins in an upright posture, then slowly starts to lean to its right, with its lower segment slightly tilting.",
+    "The leaning motion continues, causing the upper segment to tilt further right and the lower segment to rotate downwards.",
+    "The agent's upper body is now significantly angled, and the lower segment points sharply downwards, almost touching the ground.",
+    "The upper segment continues its downward arc, while the lower segment rotates further, now pointing towards the bottom right.",
+    "The agent's upper segment is nearly horizontal, and the lower segment has swung upwards and to the left, indicating a loss of balance.",
+    "The agent attempts to recover, with the upper segment beginning to rise and the lower segment rotating downwards and to the left.",
+    "The upper segment continues to straighten, moving towards a vertical position, as the lower segment rotates back towards horizontal.",
+    "The agent nearly returns to its initial upright posture, with both segments aligning vertically, though still slightly swaying."
+  ]
+}

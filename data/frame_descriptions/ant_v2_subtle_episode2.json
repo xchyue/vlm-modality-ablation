@@ -1,0 +1,16 @@
+{
+  "task": "ant",
+  "variant": "v2_subtle",
+  "episode": 2,
+  "video": "data/reweight_rollouts/ant_v2_subtle_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent is stationary, low to the ground, with all four legs spread and in contact.",
+    "The agent slightly lifts its front-left leg, initiating a subtle weight shift.",
+    "The front-left leg moves forward while the body remains low, maintaining three-point contact.",
+    "The front-left leg touches down, and the agent's body slightly adjusts its low posture.",
+    "The agent lifts its front-right leg, extending it forward while keeping its body low.",
+    "The front-right leg makes contact with the ground, and the agent's body remains in a low stance.",
+    "The agent lifts its back-left leg, moving it forward while the body stays low and stable.",
+    "The back-left leg touches down, and the agent settles into a low, stable, four-legged posture."
+  ]
+}

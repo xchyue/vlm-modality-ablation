@@ -1,0 +1,16 @@
+{
+  "task": "humanoid",
+  "variant": "v3_shaping",
+  "episode": 2,
+  "video": "data/reweight_rollouts/humanoid_v3_shaping_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent stands upright with arms bent, appearing stable.",
+    "It begins to lean forward, bending at the waist, with arms moving slightly.",
+    "The agent continues to bend forward, lifting and bending its right leg.",
+    "It enters a deep crouch, with both knees bent and arms extended forward.",
+    "The agent starts to fall forward, becoming horizontal in mid-air.",
+    "It is fully airborne, body parallel to the ground, with bent legs and extended arms.",
+    "The agent continues its fall, maintaining a horizontal posture.",
+    "It lands flat on its front, with all limbs making contact, appearing to have collapsed."
+  ]
+}

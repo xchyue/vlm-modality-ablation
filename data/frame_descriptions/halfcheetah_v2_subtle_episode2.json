@@ -1,0 +1,16 @@
+{
+  "task": "halfcheetah",
+  "variant": "v2_subtle",
+  "episode": 2,
+  "video": "data/reweight_rollouts/halfcheetah_v2_subtle_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent begins in a low crouch, then extends its right leg backward, preparing to push off.",
+    "It pushes off the ground with its right leg, lifting its body and bending its left leg forward.",
+    "The agent is airborne, with both legs bent and tucked beneath its body, moving horizontally.",
+    "It lands on its left leg, which is extended, while the right leg is bent and lifted off the ground.",
+    "The agent pushes off with its left leg, lifting its body into the air again.",
+    "It is airborne once more, with both legs bent and tucked, maintaining forward momentum.",
+    "The agent lands on its right leg, which is extended, as the left leg is bent and lifted.",
+    "It pushes off with its right leg, initiating another jump, completing a hopping cycle."
+  ]
+}

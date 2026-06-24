@@ -1,0 +1,20 @@
+{
+  "audit_input": {
+    "video_path": "data/reweight_rollouts/ant_v3_shaping_seed0/iter_0/episode_2/video.mp4",
+    "task_goal": "make the quadruped ant move forward with a stable gait",
+    "available_components": [],
+    "current_weights": {},
+    "frame_descriptions": null,
+    "reward_log": null,
+    "component_log": null
+  },
+  "audit_output": {
+    "task_success": false,
+    "reward_hacking_detected": false,
+    "reason": "The ant immediately loses balance, flips onto its back, and flails its legs, failing to achieve any forward movement or a stable gait. No reward components were provided, so no specific reward hacking can be identified.",
+    "next_reward_weights": {},
+    "severity": 5
+  },
+  "auditor_name": "VLMAuditor[gemini-2.5-flash][M6]",
+  "timestamp": "2026-06-02T03:53:53+00:00"
+}

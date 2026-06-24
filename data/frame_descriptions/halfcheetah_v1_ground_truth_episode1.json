@@ -1,0 +1,16 @@
+{
+  "task": "halfcheetah",
+  "variant": "v1_ground_truth",
+  "episode": 1,
+  "video": "data/reweight_rollouts/halfcheetah_v1_ground_truth_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent begins in a crouched stance, then extends its body forward and downward, lowering its torso towards the ground.",
+    "It continues to lower, resting its main body segment on the ground while its front and back limbs remain bent and slightly elevated.",
+    "The agent starts to push its torso upwards, extending its front limbs while its rear limbs remain mostly on the ground.",
+    "It achieves a crouched, upright posture, with all four limbs bent and supporting its body above the checkered surface.",
+    "The agent then begins to lower its body again, extending its main segment forward and down towards the ground.",
+    "Its torso is now resting on the ground, with its front and back limbs bent and slightly lifted, in a prone position.",
+    "It initiates another upward movement, pushing off the ground with its front limbs to raise its torso.",
+    "The agent successfully returns to a stable, crouched position, with all limbs bent and maintaining contact with the ground."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "audit_input": {
+    "video_path": "data/reweight_rollouts/halfcheetah_v3_shaping_seed0/iter_0/episode_0/video.mp4",
+    "task_goal": "make the half-cheetah run forward quickly with stable locomotion",
+    "available_components": [
+      "forward_velocity",
+      "energy_cost",
+      "forward_displacement",
+      "alive_bonus"
+    ],
+    "current_weights": {
+      "forward_velocity": 10.0,
+      "energy_cost": 0.1,
+      "alive_bonus": 0.0,
+      "forward_displacement": 0.0
+    },
+    "frame_descriptions": null,
+    "reward_log": null,
+    "component_log": null
+  },
+  "audit_output": {
+    "task_success": false,
+    "reward_hacking_detected": true,
+    "reason": "The agent is lying on the ground, performing repetitive wiggling motions with its limbs. This is a form of proxy-driven motion that does not achieve the task goal of stable forward locomotion. The agent is not making any significant forward progress.",
+    "next_reward_weights": {
+      "alive_bonus": 0.0,
+      "energy_cost": 1.0,
+      "forward_displacement": 0.0,
+      "forward_velocity": 10.0
+    },
+    "severity": 5
+  },
+  "auditor_name": "VLMAuditor[gemini-2.5-flash][M4]",
+  "timestamp": "2026-05-31T23:08:55+00:00"
+}

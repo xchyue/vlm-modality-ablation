@@ -1,0 +1,16 @@
+{
+  "task": "humanoid",
+  "variant": "v1_ground_truth",
+  "episode": 1,
+  "video": "data/reweight_rollouts/humanoid_v1_ground_truth_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent stands upright with both feet on the ground, arms bent at the elbows and held in front of its chest.",
+    "It begins to lean forward, lifting its right foot slightly off the ground while its arms remain bent.",
+    "The agent leans further, bending its left knee and lifting its right leg higher, with arms still bent.",
+    "Its torso is significantly bent forward, and the right leg is extended backward, while the left leg supports its weight.",
+    "The agent starts to straighten its torso, swinging its right leg forward as it prepares to place it down.",
+    "Both feet are now on the ground, and the agent is mostly upright, with arms still bent at the chest.",
+    "It lifts its left leg, bending it at the knee, while leaning slightly to the right, maintaining balance on its right foot.",
+    "The left leg extends forward and downward, with the torso leaning forward, indicating a continuation of a walking motion."
+  ]
+}

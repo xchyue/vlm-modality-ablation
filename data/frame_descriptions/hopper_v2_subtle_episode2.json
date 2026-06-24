@@ -1,0 +1,16 @@
+{
+  "task": "hopper",
+  "variant": "v2_subtle",
+  "episode": 2,
+  "video": "data/reweight_rollouts/hopper_v2_subtle_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent begins in an upright posture, with its lower segment starting to tilt slightly to the right.",
+    "The lower segment continues its rightward tilt, and the upper segment starts to lean, maintaining a relatively straight overall form.",
+    "The agent is significantly angled to the right, with its lower segment approaching a horizontal position.",
+    "The agent's lower segment makes contact with the ground, and the upper segment is sharply angled upwards and to the right.",
+    "The lower segment is now fully on the ground, and the upper segment bends at the joint, moving towards a more vertical alignment.",
+    "The agent forms an 'L' shape, with the lower segment flat on the ground and the upper segment nearly perpendicular to it.",
+    "The upper segment begins to tilt back to the right, and the lower segment starts to lift off the ground.",
+    "The agent is again significantly tilted right, with both segments angled upwards from the ground, appearing to swing back."
+  ]
+}

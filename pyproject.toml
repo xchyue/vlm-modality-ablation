@@ -1,0 +1,67 @@
+[project]
+name = "vlm-modality-ablation"
+version = "0.2.0"
+description = "Standalone benchmark for VLM reward-hacking detection modality ablation (M1–M6)"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+authors = [{ name = "CSE 190 Team" }]
+license = { text = "MIT" }
+
+dependencies = [
+    "numpy>=1.26",
+    "pydantic>=2.6",
+    "imageio[ffmpeg]>=2.34",
+]
+
+[project.optional-dependencies]
+# Part 1 + Part 2 — env, rollout collection, PPO training
+train = [
+    "gymnasium[mujoco]>=1.0",
+    "mujoco>=3.0",
+    "torch>=2.2",
+    "pyyaml>=6.0",
+    "tqdm>=4.66",
+]
+analysis = ["matplotlib>=3.8"]
+dev = ["pytest>=8.0", "ruff>=0.4", "gymnasium>=1.0", "pyyaml>=6.0"]
+# Audit-only + analysis + fast tests (no MuJoCo)
+audit = ["matplotlib>=3.8", "pytest>=8.0", "ruff>=0.4"]
+# Everything
+all = [
+    "gymnasium[mujoco]>=1.0",
+    "mujoco>=3.0",
+    "torch>=2.2",
+    "pyyaml>=6.0",
+    "tqdm>=4.66",
+    "matplotlib>=3.8",
+    "pytest>=8.0",
+    "ruff>=0.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/reward_auditor"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "SIM", "RUF"]
+ignore = ["E501", "B008", "RUF001", "RUF002", "RUF003"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["B007", "B011", "RUF059"]
+"scripts/*" = ["RUF059"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra --strict-markers -m 'not slow'"
+markers = [
+    "slow: marks tests requiring MuJoCo / heavy deps (skipped by default; run with `-m slow`)",
+]

@@ -1,0 +1,16 @@
+{
+  "task": "hopper",
+  "variant": "v5_sim_bug",
+  "episode": 2,
+  "video": "data/reweight_rollouts/hopper_v5_sim_bug_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent stands upright, then begins to lean slightly to its right.",
+    "It continues to tilt further to the right, maintaining contact with the ground at its base.",
+    "The agent's body is now significantly angled, falling towards the right side.",
+    "The fall progresses, with the upper segment moving closer to the ground.",
+    "The agent's main body is nearly horizontal, with its base still partially upright.",
+    "The entire structure is now almost flat, with the base rotating to align with the body.",
+    "The agent is collapsing onto the ground, with its segments nearly parallel to the surface.",
+    "The agent has completely fallen and is lying flat on the checkered ground."
+  ]
+}

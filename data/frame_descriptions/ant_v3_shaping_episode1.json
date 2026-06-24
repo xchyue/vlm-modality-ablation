@@ -1,0 +1,16 @@
+{
+  "task": "ant",
+  "variant": "v3_shaping",
+  "episode": 1,
+  "video": "data/reweight_rollouts/ant_v3_shaping_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent lies flat on its belly with all four limbs splayed outwards, making full contact with the ground.",
+    "It begins to lift its central body slightly, bending its front two limbs inward while the rear limbs remain extended.",
+    "The agent continues to elevate its body, with all four limbs now actively supporting its weight and bending at the joints.",
+    "Its body is now significantly raised off the ground, supported by its four bent limbs in a low crouch.",
+    "The agent achieves a stable, elevated quadrupedal stance, with all four limbs firmly planted and supporting the central sphere.",
+    "It maintains this stable, elevated posture, with its limbs bent and making continuous contact with the ground.",
+    "The agent slightly adjusts its weight, but its overall quadrupedal stance and limb positions remain largely unchanged.",
+    "It holds its elevated, static quadrupedal posture, showing no forward movement or change in gait."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task": "hopper",
+  "variant": "v2_subtle",
+  "episode": 0,
+  "video": "data/reweight_rollouts/hopper_v2_subtle_seed0/iter_0/episode_0/video.mp4",
+  "frames": [
+    "The agent stands upright, then begins to tilt forward and slightly to its right.",
+    "It continues to lean further to the right, with its lower segment approaching a diagonal angle.",
+    "The entire body is now significantly angled, with the upper segment also tilting rightward.",
+    "The agent loses balance, with its lower segment nearly horizontal and the upper segment sharply angled.",
+    "The right side of the lower segment lifts off the ground as the agent begins to rotate counter-clockwise.",
+    "The agent is mid-rotation, with its upper segment pointing downwards and the lower segment angled upwards.",
+    "The rotation continues smoothly, bringing the upper segment almost parallel to the ground.",
+    "The agent completes a full flip, landing on its lower segment in a reversed orientation."
+  ]
+}

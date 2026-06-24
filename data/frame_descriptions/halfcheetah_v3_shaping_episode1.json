@@ -1,0 +1,16 @@
+{
+  "task": "halfcheetah",
+  "variant": "v3_shaping",
+  "episode": 1,
+  "video": "data/reweight_rollouts/halfcheetah_v3_shaping_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent begins in a low, crouched posture, then extends its right leg forward while lifting its left leg.",
+    "It transitions to a prone position, extending its body and right leg forward, with the left leg bent and lifted.",
+    "The agent pushes off with its right leg, bringing its left leg forward to make contact, maintaining a low crawl.",
+    "It continues to crawl forward, with its body close to the ground, alternating leg movements smoothly.",
+    "The agent maintains a low, elongated posture, extending its right leg while bending and lifting its left.",
+    "It propels itself forward with a smooth, undulating motion, keeping its torso flat on the surface.",
+    "The agent's right leg extends fully, while the left leg bends and prepares for the next forward push.",
+    "It concludes the movement in a low, stretched-out position, appearing to continue its crawling gait."
+  ]
+}

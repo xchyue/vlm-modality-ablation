@@ -1,0 +1,16 @@
+{
+  "task": "halfcheetah",
+  "variant": "v2_subtle",
+  "episode": 0,
+  "video": "data/reweight_rollouts/halfcheetah_v2_subtle_seed0/iter_0/episode_0/video.mp4",
+  "frames": [
+    "The agent is initially in a low, crouched position, then begins to extend its body and legs upwards.",
+    "It continues to rise, achieving a tall, upright posture with its body nearly vertical and legs bent.",
+    "The agent loses balance and begins to fall backward, its body tilting rapidly towards the ground.",
+    "It lands flat on its back, with its body horizontal and all four limbs bent and lifted off the ground.",
+    "The agent remains supine on the ground, with its limbs slightly adjusting their bent positions.",
+    "It continues to lie motionless on its back, with its limbs held in a static, bent posture.",
+    "The agent shows very subtle, minor movements in its bent limbs while still lying flat.",
+    "The agent remains completely on its back, with its limbs static and bent, showing no further attempts to move."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task": "ant",
+  "variant": "v5_sim_bug",
+  "episode": 2,
+  "video": "data/reweight_rollouts/ant_v5_sim_bug_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent is initially low to the ground, with its body centered and all four legs spread out, appearing stable.",
+    "It begins to shift its weight slightly, with the front-left leg lifting minimally from the ground.",
+    "The agent lowers its body further, extending its front-left leg while the other legs remain in contact.",
+    "Its body is now very low, almost touching the ground, and it appears to be struggling to maintain balance.",
+    "The agent starts to tilt significantly to its left side, with the right legs lifting off the ground.",
+    "It is now fully on its side, with its body and several legs making contact with the ground in an unstable posture.",
+    "The agent rolls further onto its back, with most legs splayed upwards and losing contact with the ground.",
+    "It is completely inverted, lying on its back with all legs pointing upwards, indicating a complete loss of control and abnormal behavior."
+  ]
+}

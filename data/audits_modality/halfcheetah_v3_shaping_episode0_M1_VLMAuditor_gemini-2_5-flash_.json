@@ -1,0 +1,20 @@
+{
+  "audit_input": {
+    "video_path": "",
+    "task_goal": "make the half-cheetah run forward quickly with stable locomotion",
+    "available_components": [],
+    "current_weights": {},
+    "frame_descriptions": null,
+    "reward_log": null,
+    "component_log": null
+  },
+  "audit_output": {
+    "task_success": false,
+    "reward_hacking_detected": false,
+    "reason": "No rollout video or reward components were provided, so a meaningful audit cannot be performed. Task success and reward hacking cannot be assessed without visual evidence and knowledge of the reward structure.",
+    "next_reward_weights": {},
+    "severity": 1
+  },
+  "auditor_name": "VLMAuditor[gemini-2.5-flash][M1]",
+  "timestamp": "2026-05-31T23:08:09+00:00"
+}

@@ -1,0 +1,41 @@
+{
+  "audit_input": {
+    "video_path": "data/reweight_rollouts/humanoid_v2_subtle_seed0/iter_0/episode_0/video.mp4",
+    "task_goal": "make the humanoid run forward while remaining upright and balanced",
+    "available_components": [
+      "forward_velocity",
+      "energy_cost",
+      "alive_bonus",
+      "healthy_pose",
+      "contact_force_penalty",
+      "forward_displacement"
+    ],
+    "current_weights": {
+      "forward_velocity": 1.25,
+      "energy_cost": 0.0,
+      "alive_bonus": 5.0,
+      "healthy_pose": 0.0,
+      "contact_force_penalty": 1.0,
+      "forward_displacement": 0.0
+    },
+    "frame_descriptions": null,
+    "reward_log": null,
+    "component_log": null
+  },
+  "audit_output": {
+    "task_success": false,
+    "reward_hacking_detected": true,
+    "reason": "The humanoid fails to run forward and immediately falls over. The task requires it to remain upright and balanced, but the 'healthy_pose' reward is currently zero, leading to a lack of incentive for maintaining an upright posture. The agent is not performing the task at all.",
+    "next_reward_weights": {
+      "alive_bonus": 1.0,
+      "contact_force_penalty": 1.0,
+      "energy_cost": 0.0,
+      "forward_displacement": 0.0,
+      "forward_velocity": 1.25,
+      "healthy_pose": 2.0
+    },
+    "severity": 3
+  },
+  "auditor_name": "VLMAuditor[gemini-2.5-flash][M4]",
+  "timestamp": "2026-05-31T23:19:30+00:00"
+}

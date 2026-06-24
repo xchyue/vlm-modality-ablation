@@ -1,0 +1,16 @@
+{
+  "task": "ant",
+  "variant": "v1_ground_truth",
+  "episode": 1,
+  "video": "data/reweight_rollouts/ant_v1_ground_truth_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent begins in a very low posture, with its body nearly touching the ground and its four legs splayed outwards.",
+    "Its central body starts to lift slightly, and the legs begin to bend more acutely underneath it.",
+    "The agent's body continues to rise, with all four legs maintaining contact and adjusting their angles.",
+    "The body is now significantly elevated from the ground, supported by its four bent legs.",
+    "It continues to extend its legs, further raising its central body towards an upright position.",
+    "The agent reaches its highest posture, with its body well clear of the ground and legs extended downwards.",
+    "It holds this elevated stance, appearing stable and balanced on all four limbs.",
+    "The agent maintains its raised, static posture, showing no further movement."
+  ]
+}

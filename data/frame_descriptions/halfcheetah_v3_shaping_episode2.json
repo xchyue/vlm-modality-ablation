@@ -1,0 +1,16 @@
+{
+  "task": "halfcheetah",
+  "variant": "v3_shaping",
+  "episode": 2,
+  "video": "data/reweight_rollouts/halfcheetah_v3_shaping_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent is in a low, crouched posture, with its body nearly parallel to the ground and all limbs bent.",
+    "It begins to push up, extending its front limbs while its rear limbs remain bent and in contact with the ground.",
+    "The agent's body is now highly arched, with its front limbs reaching upwards, and it appears unstable.",
+    "It collapses forward, returning to a horizontal position, with its limbs bending to absorb the impact.",
+    "The agent lies flat on its stomach, with all limbs bent and resting on the checkered surface.",
+    "It slightly raises its front limbs, bending them at the joints, while the main body remains grounded.",
+    "The front limbs extend further upwards, creating a slight arch in the body, but it maintains ground contact.",
+    "The agent settles back into a prone position, with all limbs bent and resting on the ground, appearing still."
+  ]
+}

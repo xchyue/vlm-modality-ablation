@@ -1,0 +1,20 @@
+{
+  "audit_input": {
+    "video_path": "data/reweight_rollouts/humanoid_v2_subtle_seed0/iter_0/episode_1/video.mp4",
+    "task_goal": "make the humanoid run forward while remaining upright and balanced",
+    "available_components": [],
+    "current_weights": {},
+    "frame_descriptions": null,
+    "reward_log": null,
+    "component_log": null
+  },
+  "audit_output": {
+    "task_success": false,
+    "reward_hacking_detected": true,
+    "reason": "The humanoid fails to run forward and immediately falls backward, indicating a complete failure to achieve the task goal of running forward while remaining upright and balanced.",
+    "next_reward_weights": {},
+    "severity": 5
+  },
+  "auditor_name": "VLMAuditor[gemini-2.5-flash][M6]",
+  "timestamp": "2026-06-02T04:21:35+00:00"
+}

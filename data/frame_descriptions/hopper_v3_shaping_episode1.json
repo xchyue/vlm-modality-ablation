@@ -1,0 +1,16 @@
+{
+  "task": "hopper",
+  "variant": "v3_shaping",
+  "episode": 1,
+  "video": "data/reweight_rollouts/hopper_v3_shaping_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent stands upright with both segments aligned vertically, maintaining a stable posture on the checkered ground.",
+    "The lower segment begins to bend forward at the joint, causing the entire structure to lean slightly.",
+    "The lower segment continues its forward bend, and the upper segment starts to tilt forward in response.",
+    "The lower segment is significantly bent, forming an acute angle with the upper segment, which is now clearly leaning forward.",
+    "The lower segment reaches its maximum bend, almost horizontal, while the upper segment maintains a forward-leaning posture.",
+    "The lower segment starts to straighten, and the upper segment begins to pivot backward, initiating a return to an upright stance.",
+    "The lower segment continues to extend, and the upper segment is nearly vertical, showing a smooth recovery motion.",
+    "The agent fully straightens, returning to its initial upright and stable posture, with both segments vertically aligned."
+  ]
+}

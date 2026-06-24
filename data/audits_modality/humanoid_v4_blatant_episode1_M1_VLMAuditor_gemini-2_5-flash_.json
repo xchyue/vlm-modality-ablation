@@ -1,0 +1,20 @@
+{
+  "audit_input": {
+    "video_path": "",
+    "task_goal": "make the humanoid run forward while remaining upright and balanced",
+    "available_components": [],
+    "current_weights": {},
+    "frame_descriptions": null,
+    "reward_log": null,
+    "component_log": null
+  },
+  "audit_output": {
+    "task_success": false,
+    "reward_hacking_detected": false,
+    "reason": "No video or reward component data (available_components, current_weights) were provided, making it impossible to audit the rollout, confirm task success, or detect reward hacking. Therefore, task success cannot be confirmed.",
+    "next_reward_weights": {},
+    "severity": 1
+  },
+  "auditor_name": "VLMAuditor[gemini-2.5-flash][M1]",
+  "timestamp": "2026-06-02T01:41:27+00:00"
+}

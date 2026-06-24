@@ -1,0 +1,16 @@
+{
+  "task": "ant",
+  "variant": "v1_ground_truth",
+  "episode": 2,
+  "video": "data/reweight_rollouts/ant_v1_ground_truth_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent starts in a low crouch with all four legs on the ground, then lowers its body further.",
+    "Its body is nearly touching the ground, and its legs are widely splayed, maintaining ground contact.",
+    "The agent begins to push its body upwards, drawing its legs inward slightly.",
+    "It returns to a stable, crouched posture with all four legs firmly on the checkered surface.",
+    "The agent once again lowers its body, extending its legs outwards from its central mass.",
+    "Its body is very close to the ground, and it extends its front-right and rear-left legs further.",
+    "The agent maintains a very low posture, with its front-right leg extended far forward.",
+    "It then pushes its body up, bringing its legs back to a balanced, crouched stance."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task": "hopper",
+  "variant": "v4_blatant",
+  "episode": 1,
+  "video": "data/reweight_rollouts/hopper_v4_blatant_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent stands upright, then the lower segment begins to tilt slightly to the right.",
+    "The lower segment continues to tilt right, and the upper segment starts to bend at the joint.",
+    "The lower segment tilts further right, and the upper segment bends more, forming a distinct angle.",
+    "The lower segment is significantly angled, and the upper segment bends sharply, bringing its top closer to the ground.",
+    "The lower segment is nearly horizontal, and the upper segment is bent almost 90 degrees, with its end pointing down.",
+    "The agent has fallen to its side, with the lower segment flat on the ground and the upper segment bent, touching the ground.",
+    "The agent remains fallen, lying horizontally on the ground with both segments in contact.",
+    "The agent is completely still, resting on the ground in a collapsed posture."
+  ]
+}

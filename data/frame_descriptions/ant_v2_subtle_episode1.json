@@ -1,0 +1,16 @@
+{
+  "task": "ant",
+  "variant": "v2_subtle",
+  "episode": 1,
+  "video": "data/reweight_rollouts/ant_v2_subtle_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent starts in a low, crouched posture with all four legs firmly on the checkered ground.",
+    "It slightly lowers its central body while the front left leg begins to lift off the ground.",
+    "The body continues to descend, and the front left leg extends forward, clearly airborne.",
+    "The agent's body is at its lowest point, with the front left leg fully extended forward, poised to land.",
+    "The body begins to rise as the front left leg makes contact with the ground, initiating a forward push.",
+    "Weight shifts to the front left leg, and the rear right leg lifts off the ground, beginning its forward swing.",
+    "The agent moves forward, with the rear right leg swinging through the air, and the body is now higher.",
+    "The rear right leg lands, completing a full step, and the agent maintains a stable, forward-leaning posture."
+  ]
+}

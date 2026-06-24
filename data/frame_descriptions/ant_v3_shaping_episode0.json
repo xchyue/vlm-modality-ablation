@@ -1,0 +1,16 @@
+{
+  "task": "ant",
+  "variant": "v3_shaping",
+  "episode": 0,
+  "video": "data/reweight_rollouts/ant_v3_shaping_seed0/iter_0/episode_0/video.mp4",
+  "frames": [
+    "The agent is in a low, splayed posture with all four limbs on the ground, appearing stable.",
+    "The agent's body slightly shifts forward, and the front-left limb briefly lifts and touches down.",
+    "The agent maintains a low posture, with its body slightly rocking and limbs adjusting contact with the ground.",
+    "The agent's body lowers further, almost touching the ground, with all four limbs spread wide.",
+    "The agent begins to lift its body, pushing off the ground, with the front-left limb rising.",
+    "The agent's body is now significantly elevated, and it is rotating counter-clockwise, with some limbs off the ground.",
+    "The agent continues to rotate and lift, balancing precariously on its rear limbs, with its body tilted.",
+    "The agent is mostly upright, balancing on two limbs, with its body highly tilted and rotating, appearing unstable."
+  ]
+}

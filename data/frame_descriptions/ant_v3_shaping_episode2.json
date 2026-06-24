@@ -1,0 +1,16 @@
+{
+  "task": "ant",
+  "variant": "v3_shaping",
+  "episode": 2,
+  "video": "data/reweight_rollouts/ant_v3_shaping_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent is in a low, crouched posture with all four legs on the checkered ground, appearing stable.",
+    "It begins a subtle rocking motion, lifting its front-right leg slightly, then its front-left leg.",
+    "The rocking continues, with the front legs alternately lifting and touching down, but the agent remains largely stationary.",
+    "The agent shifts its weight, lifting its front-right leg again, then its front-left, maintaining a low, stable stance.",
+    "It lifts its front-right leg higher, then its front-left, and begins to lean forward, showing signs of instability.",
+    "The agent's body tilts sharply forward and to the left, losing balance as its front-left leg is raised.",
+    "It falls completely onto its back, with all four legs flailing upwards, now inverted and chaotic.",
+    "The agent remains on its back, legs splayed, unable to recover or perform any locomotion."
+  ]
+}

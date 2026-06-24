@@ -1,0 +1,16 @@
+{
+  "task": "humanoid",
+  "variant": "v4_blatant",
+  "episode": 2,
+  "video": "data/reweight_rollouts/humanoid_v4_blatant_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent stands upright with both feet on the ground, its arms bent and held near its chest.",
+    "It begins to lean forward, lifting its right leg while swinging its left arm backward.",
+    "The agent leans further, bending its left knee and extending its right leg behind it.",
+    "Its torso is now significantly angled forward, with the right leg extended and left leg bent.",
+    "The agent's body is very low to the ground, almost horizontal, with both legs extended backward.",
+    "It is nearly parallel to the ground, with arms extended forward and legs stretched out behind.",
+    "The agent is fully horizontal, moving forward with its entire body stretched out in the air.",
+    "It continues to glide forward in a rigid, prone position, maintaining its horizontal posture."
+  ]
+}

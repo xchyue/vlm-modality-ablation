@@ -1,0 +1,16 @@
+{
+  "task": "halfcheetah",
+  "variant": "v4_blatant",
+  "episode": 2,
+  "video": "data/reweight_rollouts/halfcheetah_v4_blatant_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent begins by lifting its torso and bending its front limbs, while its rear limbs remain extended on the ground.",
+    "It continues to raise its body, bringing its front limbs further up and bending its rear limbs slightly, lifting them off the ground.",
+    "The agent reaches a peak crouched position with both sets of limbs bent and its body elevated, poised above the ground.",
+    "It then smoothly lowers its torso and extends its limbs, returning to a more elongated, flattened posture close to the ground.",
+    "The agent initiates another upward movement, bending its front limbs and starting to lift its torso from the ground.",
+    "It continues to rise, achieving a similar crouched posture with all limbs bent and the body suspended above the surface.",
+    "The agent smoothly descends again, extending its limbs and bringing its body closer to the checkered ground.",
+    "It concludes the cycle by settling into a fully extended, prone position, with its body resting flat on the ground."
+  ]
+}

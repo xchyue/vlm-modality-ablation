@@ -1,0 +1,16 @@
+{
+  "task": "hopper",
+  "variant": "v4_blatant",
+  "episode": 0,
+  "video": "data/reweight_rollouts/hopper_v4_blatant_seed0/iter_0/episode_0/video.mp4",
+  "frames": [
+    "The agent stands upright, then begins to tilt slightly to its right. Its base remains flat on the checkered ground.",
+    "The agent continues to lean further to its right, maintaining full contact with the ground via its base. The motion is smooth.",
+    "The upper segment starts to bend at the joint as the entire structure leans more significantly to the right. The base is still firmly on the ground.",
+    "The agent's upper body bends further, and the entire structure is now leaning at a steep angle. The base maintains ground contact.",
+    "The agent's upper segment is almost horizontal, and the structure is heavily tilted to the right. The base remains on the ground.",
+    "The upper segment is now fully horizontal, and the entire agent is pivoting on its base. The motion appears to be a controlled fall.",
+    "The agent's upper segment remains horizontal, and the base is still in contact with the ground, sliding slightly. The agent is not performing a locomotion task.",
+    "The agent continues to lie horizontally, with its base still on the ground, indicating a complete loss of upright posture."
+  ]
+}

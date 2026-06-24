@@ -1,0 +1,20 @@
+{
+  "audit_input": {
+    "video_path": "data/reweight_rollouts/ant_v5_sim_bug_seed0/iter_0/episode_2/video.mp4",
+    "task_goal": "make the quadruped ant move forward with a stable gait",
+    "available_components": [],
+    "current_weights": {},
+    "frame_descriptions": null,
+    "reward_log": null,
+    "component_log": null
+  },
+  "audit_output": {
+    "task_success": false,
+    "reward_hacking_detected": true,
+    "reason": "The ant immediately falls over and flips onto its back, failing to achieve any forward movement or stable gait. This unstable behavior indicates a failure in the current reward structure to guide the agent towards the task goal.",
+    "next_reward_weights": {},
+    "severity": 5
+  },
+  "auditor_name": "VLMAuditor[gemini-2.5-flash][M6]",
+  "timestamp": "2026-06-02T04:00:31+00:00"
+}

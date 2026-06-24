@@ -1,0 +1,16 @@
+{
+  "task": "hopper",
+  "variant": "v4_blatant",
+  "episode": 2,
+  "video": "data/reweight_rollouts/hopper_v4_blatant_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent starts upright, then its lower segment begins to tilt forward.",
+    "The lower segment continues to tilt, and the upper segment starts to bend backward.",
+    "The agent's lower segment tilts further, and the upper segment bends more, forming an acute angle.",
+    "The lower segment approaches a horizontal position as the upper segment bends sharply backward.",
+    "The agent's lower segment is nearly flat on the ground, with the upper segment bent almost 90 degrees backward.",
+    "The agent's lower segment is flat, and the upper segment is bent sharply, creating a stable, reclined posture.",
+    "The agent maintains this reclined posture, with its lower segment flat and upper segment bent backward.",
+    "The agent remains motionless in its final bent and reclined position, appearing stable."
+  ]
+}

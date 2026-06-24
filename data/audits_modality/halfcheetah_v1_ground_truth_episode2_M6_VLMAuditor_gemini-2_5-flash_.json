@@ -1,0 +1,20 @@
+{
+  "audit_input": {
+    "video_path": "data/reweight_rollouts/halfcheetah_v1_ground_truth_seed0/iter_0/episode_2/video.mp4",
+    "task_goal": "make the half-cheetah run forward quickly with stable locomotion",
+    "available_components": [],
+    "current_weights": {},
+    "frame_descriptions": null,
+    "reward_log": null,
+    "component_log": null
+  },
+  "audit_output": {
+    "task_success": false,
+    "reward_hacking_detected": true,
+    "reason": "The agent immediately collapses to the ground and wiggles on its belly, making no forward progress. This is not stable locomotion and fails to achieve the task goal.",
+    "next_reward_weights": {},
+    "severity": 4
+  },
+  "auditor_name": "VLMAuditor[gemini-2.5-flash][M6]",
+  "timestamp": "2026-06-02T04:16:50+00:00"
+}

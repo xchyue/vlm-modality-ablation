@@ -1,0 +1,16 @@
+{
+  "task": "hopper",
+  "variant": "v5_sim_bug",
+  "episode": 1,
+  "video": "data/reweight_rollouts/hopper_v5_sim_bug_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent, a T-shaped object, stands upright with its horizontal bar resting on the ground, then begins to tilt slightly to the right.",
+    "The agent continues to tilt smoothly to the right, with its vertical bar angling further away from the upright position.",
+    "The agent's vertical bar is now significantly angled, and the horizontal bar maintains contact with the ground, acting as a pivot.",
+    "The agent's vertical bar is nearly parallel to the ground, and the horizontal bar is still the primary point of contact, sliding slightly.",
+    "The agent is almost entirely horizontal, with the vertical bar approaching the ground, and the horizontal bar still supporting the fall.",
+    "The agent's vertical bar makes contact with the ground, and the entire structure is now lying flat on the surface.",
+    "The agent is fully resting on the ground, with both its horizontal and vertical bars lying flat and stationary.",
+    "The agent remains motionless, lying completely flat on the checkered ground, having completed its fall."
+  ]
+}

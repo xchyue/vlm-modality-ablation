@@ -1,0 +1,20 @@
+{
+  "audit_input": {
+    "video_path": "",
+    "task_goal": "make the one-legged hopper move forward while staying upright and controlled",
+    "available_components": [],
+    "current_weights": {},
+    "frame_descriptions": null,
+    "reward_log": null,
+    "component_log": null
+  },
+  "audit_output": {
+    "task_success": false,
+    "reward_hacking_detected": false,
+    "reason": "No rollout video, available components, or current weights were provided. Unable to audit rollout or propose any reward weight changes.",
+    "next_reward_weights": {},
+    "severity": 1
+  },
+  "auditor_name": "VLMAuditor[gemini-2.5-flash][M1]",
+  "timestamp": "2026-06-02T01:33:13+00:00"
+}

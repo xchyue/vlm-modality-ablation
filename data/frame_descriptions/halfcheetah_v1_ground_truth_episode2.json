@@ -1,0 +1,16 @@
+{
+  "task": "halfcheetah",
+  "variant": "v1_ground_truth",
+  "episode": 2,
+  "video": "data/reweight_rollouts/halfcheetah_v1_ground_truth_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent quickly collapses forward and to the right, with its main body segment hitting the ground. Its left leg is bent, and the right leg is extended.",
+    "The agent lies mostly on its side, with its main body segment on the ground. The left leg is bent upwards, and the right leg is bent downwards, touching the ground.",
+    "The agent remains largely on its side, with its main body segment flat on the ground. Both legs are bent, with the left leg pointing slightly upwards.",
+    "The agent continues to lie on its side, with its body segment in contact with the ground. The left leg is bent and slightly raised, while the right leg is bent and touching the ground.",
+    "The agent is still on its side, with its main body segment resting on the ground. The left leg is bent upwards, and the right leg is bent downwards, making contact with the ground.",
+    "The agent maintains its prone position, with its body segment flat on the ground. Both legs are bent, with the left leg slightly raised and the right leg touching the ground.",
+    "The agent remains on its side, with its body segment in contact with the ground. The left leg is bent and raised, while the right leg is bent and grounded.",
+    "The agent continues to lie on its side, with its main body segment on the ground. Its legs are bent and move slightly, but it makes no significant progress or change in posture."
+  ]
+}

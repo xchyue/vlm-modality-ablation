@@ -1,0 +1,16 @@
+{
+  "task": "ant",
+  "variant": "v4_blatant",
+  "episode": 1,
+  "video": "data/reweight_rollouts/ant_v4_blatant_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent is in a low, crouched posture with all four legs firmly on the checkered ground.",
+    "It begins to extend its front right leg forward and its back left leg backward, lowering its body further.",
+    "The agent's body is almost flat on the ground as its front right and back left legs are fully extended.",
+    "It retracts the front right leg and starts extending the front left leg forward, maintaining a very low posture.",
+    "The front left leg is now extended forward, and the back right leg is extended backward, with the body slightly raised but still close to the ground.",
+    "The agent continues a low, crawling motion, alternating leg extensions while keeping its body near the surface.",
+    "It lifts its front right leg again, extending it forward, while the body remains in a low, stable position.",
+    "The agent abruptly lifts its entire body and sways, with its legs splaying out, losing stable contact and appearing to lose balance."
+  ]
+}

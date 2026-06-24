@@ -1,0 +1,16 @@
+{
+  "task": "humanoid",
+  "variant": "v2_subtle",
+  "episode": 0,
+  "video": "data/reweight_rollouts/humanoid_v2_subtle_seed0/iter_0/episode_0/video.mp4",
+  "frames": [
+    "The agent stands upright, with its right arm bent and raised, and its left arm slightly bent.",
+    "The agent bends its torso forward and to the left, bringing both arms closer to its chest.",
+    "The agent continues to bend forward and to the left, extending its right arm slightly and keeping its left arm bent.",
+    "The agent straightens its torso slightly, bringing its right arm up towards its head and its left arm down.",
+    "The agent bends its torso forward again, with its right arm bent and raised, and its left arm extended downwards.",
+    "The agent leans further forward and to the left, extending both arms outwards and downwards.",
+    "The agent's torso is significantly bent forward and to the left, with its arms extended, appearing to lose balance.",
+    "The agent is falling forward and to the left, with its body nearly parallel to the ground and its limbs splayed."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "task": "ant",
+  "variant": "v4_blatant",
+  "episode": 2,
+  "video": "data/reweight_rollouts/ant_v4_blatant_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent is initially low to the ground, with its body slightly elevated and all six legs spread out, making contact.",
+    "It shifts its weight, causing the body to dip slightly, and some legs appear to lift or drag briefly.",
+    "The agent's body lowers further, almost touching the ground, with its legs splayed wide.",
+    "It then begins to slowly raise its central body, preparing for a more upright stance.",
+    "The agent achieves a slightly higher, more stable posture, with all legs firmly planted on the checkered surface.",
+    "It initiates a slow forward movement by lifting its front-left leg, maintaining a low center of gravity.",
+    "The agent continues to crawl forward, now lifting its front-right leg in a slow, deliberate gait.",
+    "Its movement is smooth but very slow, resembling a cautious, low-to-the-ground crawl."
+  ]
+}

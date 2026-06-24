@@ -1,0 +1,16 @@
+{
+  "task": "halfcheetah",
+  "variant": "v2_subtle",
+  "episode": 1,
+  "video": "data/reweight_rollouts/halfcheetah_v2_subtle_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent begins lying on its side, then pushes its lower limbs against the ground to lift its body.",
+    "It continues to rise, bending its lower limbs to bring its main body segment into a more vertical orientation.",
+    "The agent achieves an upright, crouched posture, balancing on its bent lower limbs with its upper body also flexed.",
+    "It holds this stable, crouched position, with its lower limbs firmly planted and a slight, controlled sway in its upper body.",
+    "The agent's upper body sways gently from side to side, while its bent lower limbs maintain continuous ground contact.",
+    "It continues to exhibit subtle balancing movements, keeping its core upright and its limbs flexed.",
+    "The agent's upper segment leans slightly forward, and its lower limbs make minor adjustments to maintain stability.",
+    "It concludes in a stable, crouched stance, with all limbs bent and planted, appearing ready to initiate locomotion."
+  ]
+}

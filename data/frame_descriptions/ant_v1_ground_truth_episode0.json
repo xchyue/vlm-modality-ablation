@@ -1,0 +1,16 @@
+{
+  "task": "ant",
+  "variant": "v1_ground_truth",
+  "episode": 0,
+  "video": "data/reweight_rollouts/ant_v1_ground_truth_seed0/iter_0/episode_0/video.mp4",
+  "frames": [
+    "The agent starts in a low, crouched posture with all four legs on the ground, appearing stable.",
+    "It slightly lifts its front-right leg while maintaining a low body position.",
+    "The front-right leg is lowered as the front-left leg is lifted, indicating a slow, alternating leg movement.",
+    "The agent continues this alternating pattern, lifting its back-right leg while keeping its body very low.",
+    "The back-right leg is placed down, and the back-left leg is lifted, maintaining a low, crawling gait.",
+    "The agent lifts its front-right leg again, continuing the slow, deliberate leg movements.",
+    "It lowers the front-right leg and lifts the front-left leg, exhibiting a smooth, low-to-the-ground crawl.",
+    "The agent completes the leg cycle, placing the front-left leg down and maintaining its low, stable posture."
+  ]
+}

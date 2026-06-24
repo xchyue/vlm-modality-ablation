@@ -1,0 +1,16 @@
+{
+  "task": "halfcheetah",
+  "variant": "v5_sim_bug",
+  "episode": 1,
+  "video": "data/reweight_rollouts/halfcheetah_v5_sim_bug_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent starts in a low crawling posture, with its front right and rear left limbs making contact with the ground. Its body is slightly elevated, and the front left limb is lifted.",
+    "It shifts its weight, lifting the front right limb while the front left limb moves towards the ground. The body maintains a low, somewhat unstable elevation.",
+    "The agent's torso lowers significantly, almost touching the ground, as the front left limb makes contact. The rear right limb is also on the ground, supporting the collapse.",
+    "The body is now nearly flat on the ground, with the front limbs extended and bent, attempting to push forward. The motion appears chaotic and uncontrolled.",
+    "It begins to push its torso up from the ground, extending its front left limb forward. The rear limbs remain mostly flat, providing little propulsion.",
+    "The agent collapses its torso back down to the ground, with the front right limb extending forward. This indicates a repetitive, inefficient movement pattern.",
+    "It attempts another push-up, lifting its body slightly while extending the front left limb. The rear limbs are still mostly dragging.",
+    "The agent's body again falls flat onto the ground, with its limbs splayed out. It is struggling to achieve stable locomotion, exhibiting abnormal behavior."
+  ]
+}

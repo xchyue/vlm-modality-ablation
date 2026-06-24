@@ -1,0 +1,16 @@
+{
+  "task": "humanoid",
+  "variant": "v5_sim_bug",
+  "episode": 2,
+  "video": "data/reweight_rollouts/humanoid_v5_sim_bug_seed0/iter_0/episode_2/video.mp4",
+  "frames": [
+    "The agent stands upright, then begins to lean forward and to its right, bending its knees slightly.",
+    "The agent continues to fall forward and to the right, lifting its left leg and bending its right leg, while its arms are bent at the elbows.",
+    "The agent's body is now nearly parallel to the ground, falling rapidly, with its arms extending outwards.",
+    "The agent makes initial contact with the ground on its right side, specifically its right arm and upper torso.",
+    "The agent is fully on the ground, lying on its right side, with its right arm bent and its legs curled.",
+    "The agent remains on the ground, shifting its weight slightly, with its legs becoming more tightly bent.",
+    "The agent is still on the ground, further curling its body, with its left leg bent and its right leg slightly extended.",
+    "The agent is completely collapsed on the ground, with all limbs bent and tucked close to its torso."
+  ]
+}

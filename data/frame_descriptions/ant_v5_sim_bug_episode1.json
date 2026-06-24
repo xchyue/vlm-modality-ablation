@@ -1,0 +1,16 @@
+{
+  "task": "ant",
+  "variant": "v5_sim_bug",
+  "episode": 1,
+  "video": "data/reweight_rollouts/ant_v5_sim_bug_seed0/iter_0/episode_1/video.mp4",
+  "frames": [
+    "The agent begins in a low, stable crouch with all four legs firmly on the checkered ground.",
+    "It lowers its central body closer to the ground, while its front right leg slightly lifts off the surface.",
+    "The agent shifts its weight, extending its back left leg and lifting its front right leg further into the air.",
+    "Its body remains very low, and it pushes off with its front left leg, causing a slight forward slide.",
+    "The agent's body lifts slightly as it extends its front right leg forward, appearing to attempt a step.",
+    "It then retracts the front right leg and extends the front left, maintaining a low, crawling posture.",
+    "The agent's movements appear somewhat jerky as it repositions its legs, keeping its body close to the surface.",
+    "It lifts and extends its front left leg forward, continuing a slow, deliberate crawling motion across the ground."
+  ]
+}
