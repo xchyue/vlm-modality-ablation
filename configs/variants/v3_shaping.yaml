@@ -1,0 +1,9 @@
+name: v3_shaping
+description: |
+  Shaping exploit: over-weight forward_velocity. Policy may detour-farm shaping
+  reward (e.g., flip forward, lunge unnaturally) instead of locomoting cleanly.
+hacking_severity: 3
+weights:
+  forward_velocity: 10.0
+terminate_on_unhealthy: true
+zero_others: false

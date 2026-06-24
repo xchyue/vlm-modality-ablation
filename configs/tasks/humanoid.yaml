@@ -1,0 +1,10 @@
+name: humanoid
+gym_id: Humanoid-v5
+default_weights:
+  forward_velocity: 1.25
+  energy_cost: 0.1
+  alive_bonus: 5.0
+  healthy_pose: 0.0
+  contact_force_penalty: 1.0
+  forward_displacement: 0.0
+max_episode_steps: 1000

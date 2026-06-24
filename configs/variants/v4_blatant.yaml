@@ -1,0 +1,10 @@
+name: v4_blatant
+description: |
+  Blatant hack: proxy-only reward. All weights forced to zero EXCEPT forward_velocity.
+  No regularization, no alive bonus, no contact penalty. Policy will exploit the proxy
+  in any way it can (e.g., spin in place generating velocity readings, fall forward).
+hacking_severity: 4
+weights:
+  forward_velocity: 1.0
+terminate_on_unhealthy: true
+zero_others: true

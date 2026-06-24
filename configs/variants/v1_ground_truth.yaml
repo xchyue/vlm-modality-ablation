@@ -1,0 +1,9 @@
+name: v1_ground_truth
+description: |
+  Well-designed reward: forward progress + energy regularization + alive bonus.
+  This is the reference variant — policies trained here should "actually do the task".
+hacking_severity: 1
+weights:
+  forward_velocity: 1.0
+terminate_on_unhealthy: true
+zero_others: false

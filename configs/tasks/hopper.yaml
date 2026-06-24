@@ -1,0 +1,9 @@
+name: hopper
+gym_id: Hopper-v5
+default_weights:
+  forward_velocity: 1.0
+  energy_cost: 0.001
+  alive_bonus: 1.0
+  healthy_pose: 0.0
+  forward_displacement: 0.0
+max_episode_steps: 1000

@@ -1,0 +1,8 @@
+name: halfcheetah
+gym_id: HalfCheetah-v5
+default_weights:
+  forward_velocity: 1.0
+  energy_cost: 0.1
+  alive_bonus: 0.0
+  forward_displacement: 0.0
+max_episode_steps: 1000
